@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados busqueda</title>
+</head>
+<body>
+
+    <p> Estamos buscando el: {{generacion}}</p>
+    {% if cursos %}
+                          
+    <u1>
+    {% for curso in cursos %}
+        <li> {{curso.nombre}} </li>
+        <li> {{curso.generacion}} </li>
+
+    {% endfor %}
+
+    </u1>
+
+
+    {% endif %}
+
+        </form>
+    </body>
+</html>
